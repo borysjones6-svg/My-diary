@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#08111f">
+
+    <title>Jones Journal | My Life, My Legacy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        
+<div class="profile-placeholder">
+    <img
+        src="images/profile.jpg"
+        alt="Owino Borys Omondi profile photo"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+    >
+    <span class="profile-initials">JO</span>
+</div>
+
+            
+        
+
+        <p class="eyebrow">MY PERSONAL JOURNAL</p>
+        <h1>JONES JOURNAL</h1>
+        <p class="owner-name">Owino Borys Omondi</p>
+        <p class="motto">LEARN. BUILD. INNOVATE. LEAD.</p>
+
+        <p id="clock">Loading date and time...</p>
+
+        <button id="welcomeButton" type="button">
+            Enter My Journal
+        </button>
+
+        <p class="hero-note">My Life. My Journey. My Legacy.</p>
+      
+<div class="music-player">
+    <p class="music-title">MY JOURNAL SOUNDTRACK</p>
+
+    <audio id="journalMusic" loop preload="metadata">
+        <source src="music/my-fav-song.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+
+    <button id="playMusic" type="button">▶ Play Music</button>
+    <button id="pauseMusic" type="button">Ⅱ Pause</button>
+
+    <p id="musicStatus" aria-live="polite">
+        Ready to play your soundtrack.
+    </p>
+</div>
+
+    </header>
+
+    <nav class="journal-nav" aria-label="Journal navigation">
+        <a href="#profile">Profile</a>
+        <a href="#memories">Memories</a>
+        <a href="#family">Family</a>
+        <a href="#nellie">Friendship</a>
+        <a href="#dating">Dating Life</a>
+        <a href="#education">Education</a>
+        <a href="#future">My Future</a>
+    </nav>
+
+    <main>
+
+        <section id="profile" class="journal-card">
+            <p class="section-label">01 / ABOUT ME</p>
+            <h2>My Profile</h2>
+
+            <div class="profile-info">
+                <p><strong>Full Name:</strong> Owino Borys Omondi</p>
+                <p><strong>Nicknames:</strong> Jones, Voidkrown</p>
+                <p><strong>Favorite Color:</strong> Blue</p>
+                <p><strong>Qualities:</strong> Hardworking, curious, kind, caring and loving</p>
+                <p><strong>Secondary School:</strong> St. Patrick's Segere Secondary School</p>
+                <p><strong>University:</strong> Kirinyaga University</p>
+                <p><strong>Course:</strong> Bachelor in Medical Biotechnology</p>
+            </div>
+
+            <h3>My Values</h3>
+            <p>Kindness, trust, loyalty, humility and love.</p>
+
+            <h3>My Mission</h3>
+            <p>
+                To learn, build, innovate and lead; work hard, grow through
+                challenges, support my family and create a better future.
+            </p>
+
+            <h3>My Promise to Myself</h3>
+            <p>Never ever giving up.</p>
+
+            <h3>What I Want People to Remember</h3>
+            <p>That I was a kind and loving person.</p>
+        </section>
+
+        <section id="memories" class="journal-card">
+            <p class="section-label">02 / MY JOURNEY</p>
+            <h2>My Life Memories</h2>
+            <p>
+                Twenty spaces for unforgettable moments, milestones,
+                achievements and experiences from my life.
+            </p>
+
+            <div id="memoryGallery" class="photo-slider"></div>
+        </section>
+
+        <section id="family" class="journal-card">
+            <p class="section-label">03 / MY FOUNDATION</p>
+            <h2>My Family</h2>
+            <p>
+                My family is part of my motivation. I want to work hard
+                and help build a future where my family can live happily.
+            </p>
+
+            <div id="familyGallery" class="photo-slider"></div>
+
+            <h3>What Family Means to Me</h3>
+            <p>
+                Family, love, support and the hope of a better tomorrow.
+                My dream is to help my mum and make my family proud.
+            </p>
+        </section>
+
+        <section id="nellie" class="journal-card">
+            <p class="section-label">04 / FRIENDSHIP & MEMORIES</p>
+            <h2>Friendship &amp; Nellie</h2>
+            <p>
+                A space for friendship memories, shared moments,
+                meaningful conversations and lessons learned.
+            </p>
+
+            <div id="nellieGallery" class="photo-slider"></div>
+
+            <h3>What I Value in Friendship</h3>
+            <p>
+                Trust, kindness, honesty, loyalty and respect for
+                each person's feelings and boundaries.
+            </p>
+        </section>
+
+        <section id="dating" class="journal-card">
+            <p class="section-label">05 / PERSONAL REFLECTIONS</p>
+            <h2>My Dating Life</h2>
+            <p>
+                A place to reflect on feelings, experiences, lessons,
+                personal growth and the kind of relationship I hope for.
+            </p>
+
+            <div class="reflection">
+                <h3>What Real Love Means to Me</h3>
+                <p>Trust, loyalty, kindness, honesty and mutual respect.</p>
+            </div>
+
+            <div class="reflection">
+                <h3>What I Want in the Future</h3>
+                <p>
+                    A partner who works hard, supports our shared goals
+                    and builds a future with me as an equal.
+                </p>
+            </div>
+
+            <div class="reflection">
+                <h3>What I Am Learning</h3>
+                <p>
+                    To value myself, respect other people's choices,
+                    maintain healthy boundaries and keep growing.
+                </p>
+            </div>
+
+            <label for="datingNotes">My private reflection</label>
+            <textarea id="datingNotes" rows="5"
+                placeholder="Write your feelings, lessons or thoughts here..."></textarea>
+
+            <button id="saveDatingNotes" type="button">
+                Save Reflection on This Device
+            </button>
+
+            <p id="datingStatus" class="status-message" aria-live="polite"></p>
+            <p class="privacy-note">
+                Note: this basic version stores reflections in this browser.
+                It is not password-protected or encrypted.
+            </p>
+        </section>
+
+        <section id="education" class="journal-card">
+            <p class="section-label">06 / MY LEARNING JOURNEY</p>
+            <h2>My Education</h2>
+
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                    <h3>Secondary School</h3>
+                    <p>St. Patrick's Segere Secondary School</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                    <h3>University</h3>
+                    <p>Kirinyaga University</p>
+                    <p>Bachelor in Medical Biotechnology</p>
+                </div>
+            </div>
+
+            <h3>My Learning Philosophy</h3>
+            <p>
+                Keep learning, ask questions, research, practise and
+                turn knowledge into useful projects.
+            </p>
+        </section>
+
+        <section id="future" class="journal-card">
+            <p class="section-label">07 / MY BIG VISION</p>
+            <h2>My Future Empire</h2>
+
+            <div class="empire-banner">
+                <p class="eyebrow">THE DREAM</p>
+                <h3>JONES GROUP HOLDINGS</h3>
+                <p class="gold-text">BUILDING TOMORROW. EMPOWERING GENERATIONS.</p>
+                <p>ONE VISION. MANY SOLUTIONS. LIMITLESS POSSIBILITIES.</p>
+            </div>
+
+            <p>
+                This is my long-term vision for a group of businesses
+                focused on innovation, growth, integrity, excellence,
+                sustainability and global impact.
+            </p>
+
+            <div id="businessGrid" class="business-grid"></div>
+
+            <p class="privacy-note">
+                These are future ambitions, not a claim that all these
+                businesses are already operating.
+            </p>
+        </section>
+
+        <section id="motivation" class="journal-card">
+            <p class="section-label">08 / KEEP GOING</p>
+            <h2>A Note to My Future Self</h2>
+
+            <blockquote>
+                Never ever give up. Keep learning, keep building,
+                stay kind, and work towards a future where your family
+                can live without suffering from a lack of money.
+            </blockquote>
+
+            <p class="signature">— Jones</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JONES JOURNAL</p>
+        <p>My Life. My Journey. My Legacy.</p>
+        <p>Learn. Build. Innovate. Lead.</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
